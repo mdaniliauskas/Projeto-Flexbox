@@ -257,3 +257,150 @@ article.noticias_resumo {
     line-height: 20px;
     font-size: 14px;     
 }
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_rodape {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.menu_rodape a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.rodape_caixa1,
+.rodape_caixa2,
+.rodape_caixa3 {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.rodape_caixa1 {
+    background-color: #03a2dfff;
+}
+
+.rodape_caixa2 {
+    background-color: #026fc7ff;
+}
+
+.rodape_caixa3 {
+    background-color: #024292ff;
+}
+
+.rodape_area {
+    display: flex;
+    color:  #ffffff;
+}
+
+.flexColuna {
+    flex-direction: column;     
+}
+
+.rodape_item {
+    flex: 1;
+}
+
+footer .widget_titulo_texto {
+    color: #ffffff;
+}
+
+footer .direitos {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+    align-self: flex-start;
+}
+
+.menu_movel {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mm_linha {
+    height: 3px;
+    background-color: #36a9e1;
+}
+
+@media (max-width: 600px) {
+
+    #banner_titulo {
+        padding: 20px;
+    }
+
+    #banner_titulo h1 {
+        font-size: 55px;        
+    }
+
+    #banner_titulo h2 {
+        font-size: 17px;
+    }
+
+    #banner_opcoes {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral asside {
+        padding: 20px; 
+    }
+
+    .menu_rodape {
+        flex-direction: column;        
+    }
+
+    .rodape_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .direitos {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    } 
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    header {
+        height: auto;
+    } 
+
+    #logo {
+        padding-left: 20px;
+    }
+
+    .menu_movel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+

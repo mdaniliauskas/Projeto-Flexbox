@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-
     <title>medicenter</title>
 
     <meta charset="UTF-8">
@@ -10,20 +9,33 @@
 
     <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
 
+    <script type="text/javascript">    
+        window.onload = function(){
+            document.querySelector(".menu_movel").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                } 
+            });
+        };
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container">
-
             <div id="logo">
-                <a href="#"><img src="./assets/images/logo.png" alt="logo medicenter"></a>
-                
-            </div>
-            
+                <a href="#"><img src="./assets/images/logo.png" alt="logo medicenter"></a>                
+            </div>            
 
             <div class="menu">
                 <nav>
+                    <div class="menu_movel">
+                        <div class="mm_linha"></div>
+                        <div class="mm_linha"></div>
+                        <div class="mm_linha"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="#">home</a></li>
                         <li><a href="#">blog</a></li>
@@ -51,7 +63,6 @@
                     <div class="opcoes_titulo">Emergency Case</div>
                     <div class="opcoes_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nesciunt totam itaque iure odio officia debitis tenetur?</div>
                     <a href="#">Read more</a>
-
                 </div>
                 
                 <div id="banner2">
@@ -222,6 +233,68 @@
             </aside>
         </div>
     </section>
+
+    <footer>
+        <div class="container flexColuna">
+            <div class="menu_rodape">
+                <div class="rodape_caixa1">
+                    <a href="#">
+                    <div class="opcoes_titulo">Health Insurance</div>
+                    <div class="opcoes_texto">Here in medicenter we have individual -></div>
+                    </a>
+                </div>
+                
+                <div class="rodape_caixa2">
+                    <a href="#">
+                    <div class="opcoes_titulo">Medical Records</div>
+                    <div class="opcoes_texto">Here in medicenter we have individual</div>
+                    </a>
+                </div>
+                
+                <div class="rodape_caixa3 ">
+                    <a href="#">
+                    <div class="opcoes_titulo">Online Bill Pay</div>
+                    <div class="opcoes_texto">Here in medicenter we have individual</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rodape_area">
+                <div class="rodape_item">
+                    <div class="widget_titulo">
+                        <div class="widget_titulo_texto">Medicenter Clinic</div>
+                        <div class="widget_titulo_barra"></div>
+                    </div>
+                    <div class="widget_corpo flex">
+                        
+                    </div>
+                </div>        
+
+                <div class="rodape_item">
+                    <div class="widget_titulo">
+                        <div class="widget_titulo_texto">Latest Posts</div>
+                        <div class="widget_titulo_barra"></div>
+                    </div>
+                    <div class="widget_corpo flex">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa nobis quam illum ducimus quaerat placeat rem maiores! Odio est dolor nulla sint pariatur ab nihil veniam, dicta ea quae.
+                    </div>
+                </div>
+
+                <div class="rodape_item">
+                    <div class="widget_titulo">
+                        <div class="widget_titulo_texto">Lastest Tweets</div>
+                        <div class="widget_titulo_barra"></div>
+                    </div>
+                    <div class="widget_corpo flex">
+                    </div>
+                </div>
+            </div>
+
+            <div class="direitos">
+                Copyright - Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
 
 </body>
 
